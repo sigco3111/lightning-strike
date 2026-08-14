@@ -3,9 +3,9 @@
 
 화면을 클릭하여 강력하고 사실적인 번개를 소환하고, 화면에 나타나는 다양한 오브젝트를 파괴하는 아케이드 스타일의 웹 게임입니다. 에너지를 전략적으로 관리하고, 업그레이드를 통해 번개를 강화하며, 최대한 높은 점수를 획득하는 것이 목표입니다.
 
-실행주소1 : https://lightning-strike-gilt.vercel.app/
+라이브 데모 : https://sigco3111.github.io/lightning-strike/
 
-실행주소2 : https://dev-canvas-pi.vercel.app/
+> **호스팅 이력**: 본 프로젝트는 Vercel에서 GitHub Pages로 이관되었습니다 (2026-08). 과거 Vercel alias는 더 이상 유효하지 않으므로 위 Pages URL을 사용해 주세요.
 
 ## 🎮 주요 기능
 
