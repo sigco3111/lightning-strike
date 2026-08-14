@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/lightning-strike/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/lightning-strike/apple-touch-icon.png" />
+    <link rel="manifest" href="/lightning-strike/site.webmanifest" />
+    <meta name="theme-color" content="#1E293B" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>라이트닝 스트라이크 게임</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    @keyframes screen-shake {
+      0%, 100% { transform: translate(0, 0); }
+      10%, 30%, 50%, 70%, 90% { transform: translate(-2px, 2px); }
+      20%, 40%, 60%, 80% { transform: translate(2px, -2px); }
+    }
+    .shake {
+      animation: screen-shake 0.2s ease-in-out;
+    }
+
+    @keyframes screen-flash {
+        0% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+
+    @keyframes explosion-ring {
+      0% {
+        transform: scale(0);
+        opacity: 1;
+        border-width: 10px;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 0;
+        border-width: 1px;
+      }
+    }
+
+    @keyframes shield-pulse {
+        0% { box-shadow: 0 0 10px 3px rgba(59, 130, 246, 0.6), inset 0 0 5px 2px rgba(59, 130, 246, 0.4); }
+        50% { box-shadow: 0 0 16px 5px rgba(59, 130, 246, 0.8), inset 0 0 8px 3px rgba(59, 130, 246, 0.5); }
+        100% { box-shadow: 0 0 10px 3px rgba(59, 130, 246, 0.6), inset 0 0 5px 2px rgba(59, 130, 246, 0.4); }
+    }
+
+    @keyframes relic-glow {
+        0%, 100% {
+            filter: drop-shadow(0 0 6px rgba(250, 204, 21, 0.7));
+        }
+        50% {
+            filter: drop-shadow(0 0 12px rgba(250, 204, 21, 0.9));
+        }
+    }
+
+    @keyframes vortex-pulse {
+        0%, 100% {
+            filter: drop-shadow(0 0 8px rgba(167, 139, 250, 0.6));
+        }
+        50% {
+            filter: drop-shadow(0 0 16px rgba(167, 139, 250, 0.8));
+        }
+    }
+
+    @keyframes float-up-and-fade {
+      0% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-60px);
+        opacity: 0;
+      }
+    }
+
+    @keyframes combo-pop {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.5); }
+        100% { transform: scale(1); }
+    }
+  </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/lightning-strike/assets/index-DtFtv3-t.js"></script>
+</head>
+  <body class="bg-slate-900">
+    <div id="root"></div>
+  </body>
+</html>
